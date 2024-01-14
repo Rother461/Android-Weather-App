@@ -27,6 +27,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.example.myapplication.repository.models.CurrentWeatherResponse
@@ -198,6 +199,14 @@ fun WeatherItem(weatherItem: CurrentWeatherResponse?, onClick: (CurrentWeatherRe
                         .padding(6.dp)
                         .align(Alignment.CenterHorizontally)
                 )
+                Text(
+                    text = "Click to show details",
+                    color = Color.Gray,
+                    modifier = Modifier
+                        .align(Alignment.CenterHorizontally)
+                        .padding(top = 8.dp)
+                )
+
             }
         }
     }
