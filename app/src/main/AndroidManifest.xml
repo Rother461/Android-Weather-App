@@ -20,7 +20,7 @@
             android:label="@string/title_activity_forecast_weather"
             android:theme="@style/Theme.MyApplication" />
         <activity
-            android:name=".ui.theme.DetailsWeatherActivity"
+            android:name=".DetailsWeatherActivity"
             android:exported="false"
             android:label="@string/title_activity_details_weather"
             android:theme="@style/Theme.MyApplication" />

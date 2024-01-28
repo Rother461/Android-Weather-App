@@ -27,9 +27,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.myapplication.repository.models.WeatherItem
-import com.example.myapplication.ui.theme.ImageItem
 import com.example.myapplication.ui.theme.MyApplicationTheme
-import com.example.myapplication.ui.theme.calvinToCelcius
 import java.time.Instant
 import java.time.LocalDateTime
 import java.time.ZoneId

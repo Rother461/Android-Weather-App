@@ -31,7 +31,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.example.myapplication.repository.models.CurrentWeatherResponse
-import com.example.myapplication.ui.theme.DetailsWeatherActivity
 import com.example.myapplication.ui.theme.MyApplicationTheme
 import com.google.gson.Gson
 

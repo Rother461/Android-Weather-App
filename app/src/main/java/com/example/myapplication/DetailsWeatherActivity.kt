@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.theme
+package com.example.myapplication
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -33,10 +33,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import coil.compose.AsyncImage
-import com.example.myapplication.DetailsWeatherActivityModel
 import com.example.myapplication.repository.models.AirPollutionResponse
 import com.example.myapplication.repository.models.CurrentWeatherResponse
+import com.example.myapplication.ui.theme.MyApplicationTheme
 import com.google.gson.Gson
 
 class DetailsWeatherActivity : ComponentActivity() {
@@ -255,17 +254,4 @@ fun Divider(color: Color, thickness: Dp) {
             .height(thickness)
             .background(color)
     )
-}
-
-@Composable
-fun ImageItem(imageUrl: String, modifier: Modifier) {
-    AsyncImage(
-        model = imageUrl,
-        contentDescription = "Weather Icon",
-        modifier = modifier
-    )
-}
-
-fun calvinToCelcius(temp: Float): Float {
-    return temp - 273.15f
 }
